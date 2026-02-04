@@ -39,7 +39,7 @@
   font-weight: 600;
   font-size: 26px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   color: #355e3b;
   animation: fadein 1s ease-in-out forwards;
 }
@@ -83,37 +83,33 @@
   animation: fadein 1s ease-in-out forwards;
 }
 .scroll-indicator {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 2rem;
-  border:2px solid #355e3b;
-  width:28px;
+  border: 2px solid #355e3b;
+  width: 28px;
   height: 28px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   animation:
-    fadein 0.5s ease-in-out forwards,
-    blink 1.5s ease-in-out infinite;
+    fadein 3s ease-in forwards,
+    bounce 1.5s ease-in-out infinite;
+  animation-delay: 0s, 3.5s;
 }
 
-@keyframes blink {
-  0%, 100% {
-   opacity: 0.4;
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
   50% {
-    opacity: 1;
+    transform: translateY(10px);
+    opacity: 0.5;
   }
 }
 .arrow {
-  animation:
-    fadein 0.5s ease-in-out forwards,
-    blink 1.5s ease-in-out infinite;
-  font-size:16px;
+  font-size: 16px;
   font-weight: 300;
-  color:#355e3b;
-  
+  color: #355e3b;
 }
