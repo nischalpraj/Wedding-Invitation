@@ -36,12 +36,12 @@
 }
 .inv-text {
   font-family: "Allura", cursive;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 26px;
   text-align: center;
   margin-top: 50px;
-  color:#355e3b;
- animation: fadein 1s ease-in-out forwards;
+  color: #355e3b;
+  animation: fadein 1s ease-in-out forwards;
 }
 .saru {
   text-align: center;
@@ -53,10 +53,10 @@
   margin: 100px 0px -10px 0px;
   animation: fadein 3s ease-in-out forwards;
 }
-.and{
+.and {
   text-align: center;
- font-family: "Great Vibes", cursive;
-  font-weight: 400;
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
   font-style: normal;
   font-size: 75px;
   color: #355e3b;
@@ -72,8 +72,12 @@
   margin: -10px 0 0 0;
   animation: fadein 3s ease-in-out forwards;
 }
-.long-text{
+.long-text {
   text-align: center;
-   font-family: "Allura", cursive;
-   margin:80px 0;
+  font-family: "Allura", cursive;
+  margin: 80px 0;
+  color: #355e3b;
+  font-size: 26px;
+  font-weight: 600;
+  padding:0 20px 0 20px;
 }
