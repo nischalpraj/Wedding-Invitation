@@ -18,7 +18,7 @@
   align-items: center;
   flex-direction: column;
 }
-.container {
+.first-page {
   width: 395px;
   border: 1px solid black;
   display: flex;
@@ -40,7 +40,7 @@
   font-size: 26px;
   text-align: center;
   margin-top: 100px;
-  color: #f88a87;
+  color: #bf932a;
   animation: fadein 1s ease-in-out forwards;
 }
 .saru {
@@ -76,7 +76,7 @@
   text-align: center;
   font-family: "Allura", cursive;
   margin: 80px 0;
-  color: #f88a87;
+  color: #bf932a;
   font-size: 26px;
   font-weight: 600;
   padding: 0 20px 0 20px;
