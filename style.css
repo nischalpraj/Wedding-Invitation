@@ -84,10 +84,20 @@
 }
 .scroll-indicator {
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
+  border:2px solid #355e3b;
+  width:28px;
+  height: 28px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation:
+    fadein 0.5s ease-in-out forwards,
+    blink 1.5s ease-in-out infinite;
 }
 
 @keyframes blink {
@@ -102,6 +112,8 @@
   animation:
     fadein 0.5s ease-in-out forwards,
     blink 1.5s ease-in-out infinite;
-  font-size: 28px;
+  font-size:16px;
+  font-weight: 300;
   color:#355e3b;
+  
 }
