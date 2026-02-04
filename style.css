@@ -27,36 +27,45 @@
   height: 100vh;
   flex-direction: column;
 }
-.inv-text{
-   font-family: "Allura", cursive;
-   font-weight: 300;
-   font-size:26px;
-   text-align: center;
-   /* margin-top:-100px; */
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0xp;
+}
+.inv-text {
+  font-family: "Allura", cursive;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: center;
 }
 .saru {
+  text-align: center;
   font-family: "Allura", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  margin-top:0px;
   color: #355e3b;
+  margin:50px 0px -30px 0px;
   animation: fadein 4s ease-in-out forwards;
 }
 .weds {
+  text-align: center;
   font-family: "Allura", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 100px;
-  margin-top:0px;
+  font-size: 80px;
   color: #355e3b;
   animation: fadein 4s ease-in-out forwards;
-}.bicek {
+}
+.bicek {
+  text-align: center;
   font-family: "Allura", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  margin-top:0px;
   color: #355e3b;
+  margin:-30px 0 0 0;
   animation: fadein 4s ease-in-out forwards;
 }
