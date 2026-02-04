@@ -79,5 +79,29 @@
   color: #355e3b;
   font-size: 26px;
   font-weight: 600;
-  padding:0 20px 0 20px;
+  padding: 0 20px 0 20px;
+  animation: fadein 1s ease-in-out forwards;
+}
+.scroll-indicator {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+@keyframes blink {
+  0%, 100% {
+   opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.arrow {
+  animation:
+    fadein 0.5s ease-in-out forwards,
+    blink 1.5s ease-in-out infinite;
+  font-size: 28px;
+  color:#355e3b;
 }
