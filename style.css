@@ -18,13 +18,13 @@
   align-items: center;
   flex-direction: column;
 }
-.first-page {
+.container {
   width: 395px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   flex-direction: column;
 }
 .text {
@@ -112,4 +112,16 @@
   font-size: 16px;
   font-weight: 300;
   color: #f88a87;
+}
+.scratch-container{
+  margin:400px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scratch-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
