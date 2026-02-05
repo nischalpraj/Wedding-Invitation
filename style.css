@@ -120,19 +120,19 @@
   font-weight: 300;
   color: #f88a87;
 }
-.second-page{
+.second-page {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .scratch-container {
-  margin: 400px 0px;
+  margin: 200px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width:395px;;
+  width: 395px;
 }
 .scratch-text {
   display: flex;
@@ -140,32 +140,47 @@
   align-items: center;
   flex-direction: column;
   font-family: "Libre Franklin", sans-serif;
-  font-size:24px;
+  font-size: 22px;
+  color: #f9c1a5;
 }
-.scratch-content{
-  margin:50px 0px;
-  border:1px solid red;
-  width:100%;
-  height:240px;
+.scratch-text p {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Playwrite NZ Basic", cursive;
 }
-.scratch-box1{
-  border:1px solid blue;
+.scratch-content {
+  margin: 50px 0px;
+  width: 100%;
+  height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  gap:20px;
 }
-.scratch-box2{
-  border:1px solid yellow;
+.scratch-box1 {
+  border: 1px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  width:100px;
+  height: 100px;
+  border-radius: 100%;
 }
-.scratch-box3{
-  border:1px solid green;
+.scratch-box2 {
+  border: 1px solid yellow;
   display: flex;
   justify-content: center;
+   width:100px;
+  height: 100px;
+  border-radius: 100%;
   align-items: center;
-  flex-direction: row;
+}
+.scratch-box3 {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  width:100px;
+  height: 100px;
+  border-radius: 100%;
+  align-items: center;
 }
