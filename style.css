@@ -27,6 +27,14 @@
   /* height: 100vh; */
   flex-direction: column;
 }
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: blue;
+}
 .text {
   display: flex;
   align-items: center;
@@ -113,13 +121,13 @@
   font-weight: 300;
   color: #f88a87;
 }
-.scratch-container{
-  margin:400px 0px;
+.scratch-container {
+  margin: 400px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.scratch-text{
+.scratch-text {
   display: flex;
   justify-content: center;
   align-items: center;
