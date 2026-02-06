@@ -108,7 +108,7 @@
   flex-direction: column;
 }
 .scratch-container {
-  margin: 300px 0px;
+  margin: 200px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +125,7 @@
   color: #f9c1a5;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 30%;
+  animation-range: entry 0% cover 40%;
 }
 .scratch-text p {
   font-size: 32px;
