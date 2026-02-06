@@ -33,12 +33,36 @@ function scratch(e) {
 }
 
 // Mouse events
-canvas.addEventListener("mousedown", () => (isDrawing = true));
+canvas.addEventListener("mousedown", () => {
+  isDrawing = true;
+  checkScratchPercent();
+});
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseleave", () => (isDrawing = false));
 canvas.addEventListener("mousemove", scratch);
 
 // Touch events
 canvas.addEventListener("touchstart", () => (isDrawing = true));
-canvas.addEventListener("touchend", () => (isDrawing = false));
+canvas.addEventListener("touchend", () => {
+  isDrawing = false;
+  checkScratchPercent();
+});
 canvas.addEventListener("touchmove", scratch);
+
+function checkScratchPercent() {
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const pixels = imageData.data;
+
+  let transparentPixels = 0;
+
+  for (let i = 3; i < pixels.length; i += 4) {
+    if (pixels[i] === 0) transparentPixels++;
+  }
+
+  const totalPixels = canvas.width * canvas.height;
+  const scratchedPercent = (transparentPixels / totalPixels) * 100;
+
+  if (scratchedPercent >= 30) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+}
