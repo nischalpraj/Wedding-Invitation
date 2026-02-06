@@ -123,6 +123,9 @@
   font-family: "Libre Franklin", sans-serif;
   font-size: 22px;
   color: #f9c1a5;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 30%;
 }
 .scratch-text p {
   font-size: 32px;
