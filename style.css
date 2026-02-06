@@ -149,6 +149,9 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .scratch-box2 {
   border: 1px solid yellow;
@@ -158,6 +161,9 @@
   height: 100px;
   border-radius: 100%;
   align-items: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .scratch-box3 {
   border: 1px solid green;
@@ -167,4 +173,7 @@
   height: 100px;
   border-radius: 100%;
   align-items: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
