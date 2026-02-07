@@ -142,8 +142,8 @@
   gap: 20px;
 }
 .scratch-box1 {
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
   border: 1px solid blue;
   display: flex;
   justify-content: center;
@@ -155,22 +155,24 @@
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-.hidden-message{
-  position:absolute;
-  inset:0;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.hidden-message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#scratchCanvas{
+#scratchCanvas {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  position:absolute;
-  inset:0;
-  cursor:pointer;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
 }
 .scratch-box2 {
+  position: relative;
+  overflow: hidden;
   border: 1px solid yellow;
   display: flex;
   justify-content: center;
@@ -183,6 +185,8 @@
   animation-range: entry 0% cover 40%;
 }
 .scratch-box3 {
+  position: relative;
+  overflow: hidden;
   border: 1px solid green;
   display: flex;
   justify-content: center;
