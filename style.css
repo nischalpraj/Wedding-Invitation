@@ -25,7 +25,7 @@
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background-color: #F2F0E6;
+
 }
 .text {
   display: flex;
@@ -107,6 +107,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #FCFAF6;
 }
 .scratch-container {
   margin: 200px 0px;
@@ -123,7 +124,7 @@
   flex-direction: column;
   font-family: "Libre Franklin", sans-serif;
   font-size: 22px;
-  color: #f9c1a5;
+  color: #6B3320;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
