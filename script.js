@@ -8,7 +8,7 @@ canvases.forEach((canvas) => {
   canvas.height = 100;
 
   // Fill scratch layer
-  ctx.fillStyle = 'gray';
+  ctx.fillStyle = "#f7d9d9";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   let isDrawing = false;

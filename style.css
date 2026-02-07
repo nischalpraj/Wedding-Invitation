@@ -25,7 +25,6 @@
   align-items: center;
   height: 100vh;
   flex-direction: column;
-
 }
 .text {
   display: flex;
@@ -107,7 +106,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #FCFAF6;
+  background-color: #fcfaf6;
 }
 .scratch-container {
   margin: 200px 0px;
@@ -124,7 +123,7 @@
   flex-direction: column;
   font-family: "Libre Franklin", sans-serif;
   font-size: 22px;
-  color: #6B3320;
+  color: #6b3320;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -146,7 +145,6 @@
 .scratch-box1 {
   position: relative;
   overflow: hidden;
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,6 +154,7 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  box-shadow: 0 6px 12px rgba(200, 180, 150, 0.4);
 }
 .hidden-message {
   position: absolute;
@@ -163,6 +162,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Playwrite NZ Basic", cursive;
+  font-weight: 600;
+   color: #6b3320;
 }
 #scratchCanvas {
   width: 100px;
@@ -175,7 +177,6 @@
 .scratch-box2 {
   position: relative;
   overflow: hidden;
-  border: 1px solid yellow;
   display: flex;
   justify-content: center;
   width: 100px;
@@ -185,11 +186,11 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  box-shadow: 0 6px 12px rgba(200, 180, 150, 0.4);
 }
 .scratch-box3 {
   position: relative;
   overflow: hidden;
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   width: 100px;
@@ -199,4 +200,5 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  box-shadow: 0 6px 12px rgba(200, 180, 150, 0.4);
 }
