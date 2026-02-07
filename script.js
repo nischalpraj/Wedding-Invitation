@@ -1,55 +1,69 @@
-const canvas = document.getElementById("scratchCanvas");
-const ctx = canvas.getContext("2d");
+// Initialize all scratch canvases (there are 3 in the HTML)
+const canvases = document.querySelectorAll('.scratch-content canvas');
 
-canvas.width = 100;
-canvas.height = 100;
+canvases.forEach((canvas) => {
+  const ctx = canvas.getContext('2d');
 
-// Fill scratch layer
-ctx.fillStyle = "gray";
-ctx.fillRect(0, 0, canvas.width, canvas.height);
+  canvas.width = 100;
+  canvas.height = 100;
 
-let isDrawing = false;
+  // Fill scratch layer
+  ctx.fillStyle = 'gray';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-function getPosition(e) {
-  const rect = canvas.getBoundingClientRect();
-  const clientX = e.clientX || e.touches[0].clientX;
-  const clientY = e.clientY || e.touches[0].clientY;
+  let isDrawing = false;
 
-  return {
-    x: clientX - rect.left,
-    y: clientY - rect.top,
-  };
-}
+  function getPosition(e) {
+    const rect = canvas.getBoundingClientRect();
+    const clientX = (e.clientX !== undefined) ? e.clientX : (e.touches && e.touches[0] && e.touches[0].clientX);
+    const clientY = (e.clientY !== undefined) ? e.clientY : (e.touches && e.touches[0] && e.touches[0].clientY);
 
-function scratch(e) {
-  if (!isDrawing) return;
-  e.preventDefault();
+    return {
+      x: clientX - rect.left,
+      y: clientY - rect.top,
+    };
+  }
 
-  const pos = getPosition(e);
-  ctx.globalCompositeOperation = "destination-out";
-  ctx.beginPath();
-  ctx.arc(pos.x, pos.y, 10, 0, Math.PI * 2);
-  ctx.fill();
-}
+  function scratch(e) {
+    if (!isDrawing) return;
+    e.preventDefault();
 
-// Mouse events
-canvas.addEventListener("mousedown", () => {
-  isDrawing = true;
-  checkScratchPercent();
+    const pos = getPosition(e);
+    if (!pos.x || !pos.y) return;
+
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, 10, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // Mouse events
+  canvas.addEventListener('mousedown', () => {
+    isDrawing = true;
+  });
+  canvas.addEventListener('mouseup', () => {
+    isDrawing = false;
+    checkScratchPercent(canvas, ctx);
+  });
+  canvas.addEventListener('mouseleave', () => {
+    isDrawing = false;
+    checkScratchPercent(canvas, ctx);
+  });
+  canvas.addEventListener('mousemove', scratch);
+
+  // Touch events
+  canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    isDrawing = true;
+  }, { passive: false });
+  canvas.addEventListener('touchend', () => {
+    isDrawing = false;
+    checkScratchPercent(canvas, ctx);
+  });
+  canvas.addEventListener('touchmove', scratch, { passive: false });
 });
-canvas.addEventListener("mouseup", () => (isDrawing = false));
-canvas.addEventListener("mouseleave", () => (isDrawing = false));
-canvas.addEventListener("mousemove", scratch);
 
-// Touch events
-canvas.addEventListener("touchstart", () => (isDrawing = true));
-canvas.addEventListener("touchend", () => {
-  isDrawing = false;
-  checkScratchPercent();
-});
-canvas.addEventListener("touchmove", scratch);
-
-function checkScratchPercent() {
+function checkScratchPercent(canvas, ctx) {
   const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   const pixels = imageData.data;
 
