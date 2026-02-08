@@ -212,3 +212,15 @@
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
+ .petal {
+    position: fixed;
+    top: -50px;
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle at 30% 30%, #ffd6e0, #e48aa3);
+    border-radius: 60% 40% 60% 40%;
+    opacity: 0.9;
+    pointer-events: none;
+    animation-name: fall, sway;
+    animation-timing-function: linear, ease-in-out;
+  }
