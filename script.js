@@ -6,14 +6,24 @@ const scratchedCanvases = new Set();
 
 function allScratchCompleted() {
   console.log("✅ All scratch pads completed!");
+
+  // 🎉 Left side confetti
   confetti({
-    particleCount: 200,
-    spread: 200,
-    startVelocity: 15,
-    scalar: 0.9,
-    ticks: 90,
+    particleCount: 120,
+    angle: 60,
+    spread: 70,
+    startVelocity: 20,
+    origin: { x: 0, y: 0.6 },
   });
-  // example: revealFinalReward();
+
+  // 🎉 Right side confetti
+  confetti({
+    particleCount: 120,
+    angle: 120,
+    spread: 70,
+    startVelocity: 20,
+    origin: { x: 1, y: 0.6 },
+  });
 }
 
 
