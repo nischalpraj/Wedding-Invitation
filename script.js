@@ -13,6 +13,7 @@ function allScratchCompleted() {
     angle: 60,
     spread: 70,
     startVelocity: 20,
+    colors:["#ffd6e0", "#e48aa3", "#f7d9d9"],
     origin: { x: 0, y: 0.6 },
   });
 
@@ -22,6 +23,7 @@ function allScratchCompleted() {
     angle: 120,
     spread: 70,
     startVelocity: 20,
+    colors: ["#ffd6e0", "#e48aa3", "#f7d9d9"],
     origin: { x: 1, y: 0.6 },
   });
 }
