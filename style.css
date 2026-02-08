@@ -202,3 +202,13 @@
   animation-range: entry 0% cover 40%;
   box-shadow: 0 6px 12px rgba(200, 180, 150, 0.4);
 }
+.wedtext{
+  font-family: "Playwrite NZ Basic", cursive;
+  color: #6b3320;
+  text-align: center;
+  margin-top: -50px;
+  font-weight:600;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
