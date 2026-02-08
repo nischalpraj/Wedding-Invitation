@@ -6,7 +6,13 @@ const scratchedCanvases = new Set();
 
 function allScratchCompleted() {
   console.log("✅ All scratch pads completed!");
-  // 👉 call your function here
+  confetti({
+    particleCount: 200,
+    spread: 200,
+    startVelocity: 15,
+    scalar: 0.9,
+    ticks: 90,
+  });
   // example: revealFinalReward();
 }
 
