@@ -1,6 +1,16 @@
 // Initialize all scratch canvases (there are 3 in the HTML)
 const canvases = document.querySelectorAll('.scratch-content canvas');
 
+
+const scratchedCanvases = new Set();
+
+function allScratchCompleted() {
+  console.log("✅ All scratch pads completed!");
+  // 👉 call your function here
+  // example: revealFinalReward();
+}
+
+
 canvases.forEach((canvas) => {
   const ctx = canvas.getContext('2d');
 
@@ -64,6 +74,9 @@ canvases.forEach((canvas) => {
 });
 
 function checkScratchPercent(canvas, ctx) {
+  // Prevent re-checking already completed canvas
+  if (scratchedCanvases.has(canvas)) return;
+
   const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
   const pixels = imageData.data;
 
@@ -78,5 +91,15 @@ function checkScratchPercent(canvas, ctx) {
 
   if (scratchedPercent >= 30) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // ✅ mark this canvas as completed
+    scratchedCanvases.add(canvas);
+
+    // ✅ check if all 3 are completed
+    if (scratchedCanvases.size === canvases.length) {
+      allScratchCompleted();
+    }
   }
 }
+
+
