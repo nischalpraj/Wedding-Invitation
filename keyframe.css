@@ -27,3 +27,14 @@
     scale: 1;
   }
 }
+@keyframes fall {
+    to {
+      transform: translateY(110vh) rotate(360deg);
+    }
+  }
+
+  @keyframes sway {
+    0% { margin-left: 0; }
+    50% { margin-left: 40px; }
+    100% { margin-left: 0; }
+  }
