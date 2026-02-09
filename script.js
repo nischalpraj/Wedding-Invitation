@@ -27,6 +27,7 @@ function allScratchCompleted() {
     origin: { x: 1, y: 0.6 },
   });
   wedtext.style.opacity = 1;
+  wedtext.style.animation="appear 1s ease forwards";
 }
 
 canvases.forEach((canvas) => {
