@@ -1,6 +1,5 @@
 // Initialize all scratch canvases (there are 3 in the HTML)
-const canvases = document.querySelectorAll('.scratch-content canvas');
-
+const canvases = document.querySelectorAll(".scratch-content canvas");
 
 const scratchedCanvases = new Set();
 
@@ -13,7 +12,7 @@ function allScratchCompleted() {
     angle: 60,
     spread: 70,
     startVelocity: 20,
-    colors:["#ffd6e0", "#e48aa3", "#f7d9d9"],
+    colors: ["#ffd6e0", "#e48aa3", "#f7d9d9"],
     origin: { x: 0, y: 0.6 },
   });
 
@@ -28,9 +27,8 @@ function allScratchCompleted() {
   });
 }
 
-
 canvases.forEach((canvas) => {
-  const ctx = canvas.getContext('2d');
+  const ctx = canvas.getContext("2d");
 
   canvas.width = 100;
   canvas.height = 100;
@@ -43,8 +41,14 @@ canvases.forEach((canvas) => {
 
   function getPosition(e) {
     const rect = canvas.getBoundingClientRect();
-    const clientX = (e.clientX !== undefined) ? e.clientX : (e.touches && e.touches[0] && e.touches[0].clientX);
-    const clientY = (e.clientY !== undefined) ? e.clientY : (e.touches && e.touches[0] && e.touches[0].clientY);
+    const clientX =
+      e.clientX !== undefined
+        ? e.clientX
+        : e.touches && e.touches[0] && e.touches[0].clientX;
+    const clientY =
+      e.clientY !== undefined
+        ? e.clientY
+        : e.touches && e.touches[0] && e.touches[0].clientY;
 
     return {
       x: clientX - rect.left,
@@ -59,36 +63,40 @@ canvases.forEach((canvas) => {
     const pos = getPosition(e);
     if (!pos.x || !pos.y) return;
 
-    ctx.globalCompositeOperation = 'destination-out';
+    ctx.globalCompositeOperation = "destination-out";
     ctx.beginPath();
     ctx.arc(pos.x, pos.y, 10, 0, Math.PI * 2);
     ctx.fill();
   }
 
   // Mouse events
-  canvas.addEventListener('mousedown', () => {
+  canvas.addEventListener("mousedown", () => {
     isDrawing = true;
   });
-  canvas.addEventListener('mouseup', () => {
+  canvas.addEventListener("mouseup", () => {
     isDrawing = false;
     checkScratchPercent(canvas, ctx);
   });
-  canvas.addEventListener('mouseleave', () => {
+  canvas.addEventListener("mouseleave", () => {
     isDrawing = false;
     checkScratchPercent(canvas, ctx);
   });
-  canvas.addEventListener('mousemove', scratch);
+  canvas.addEventListener("mousemove", scratch);
 
   // Touch events
-  canvas.addEventListener('touchstart', (e) => {
-    e.preventDefault();
-    isDrawing = true;
-  }, { passive: false });
-  canvas.addEventListener('touchend', () => {
+  canvas.addEventListener(
+    "touchstart",
+    (e) => {
+      e.preventDefault();
+      isDrawing = true;
+    },
+    { passive: false },
+  );
+  canvas.addEventListener("touchend", () => {
     isDrawing = false;
     checkScratchPercent(canvas, ctx);
   });
-  canvas.addEventListener('touchmove', scratch, { passive: false });
+  canvas.addEventListener("touchmove", scratch, { passive: false });
 });
 
 function checkScratchPercent(canvas, ctx) {
@@ -119,5 +127,3 @@ function checkScratchPercent(canvas, ctx) {
     }
   }
 }
-
-
