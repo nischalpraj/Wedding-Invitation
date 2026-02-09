@@ -1,5 +1,6 @@
 // Initialize all scratch canvases (there are 3 in the HTML)
 const canvases = document.querySelectorAll(".scratch-content canvas");
+const wedtext=document.querySelector(".wedtext");
 
 const scratchedCanvases = new Set();
 
@@ -25,6 +26,7 @@ function allScratchCompleted() {
     colors: ["#ffd6e0", "#e48aa3", "#f7d9d9"],
     origin: { x: 1, y: 0.6 },
   });
+  wedtext.style.opacity = 1;
 }
 
 canvases.forEach((canvas) => {

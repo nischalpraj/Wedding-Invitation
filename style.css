@@ -212,6 +212,7 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  opacity:0;
 }
 .petal {
   position: fixed;
