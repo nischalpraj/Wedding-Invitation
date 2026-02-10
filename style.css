@@ -11,8 +11,8 @@
   flex-direction: column;
 }
 .container {
-  width: 395px;
-  /* border: 1px solid black; */
+  width: 450px;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,8 @@
 .inv-text {
   font-family: "Allura", cursive;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 32px;
+  padding:
   text-align: center;
   margin-top: 100px;
   color: #bf932a;

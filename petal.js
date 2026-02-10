@@ -1,4 +1,4 @@
-const petalCount = 30;
+const petalCount = 50;
 
 function createPetal() {
   const petal = document.createElement("div");
