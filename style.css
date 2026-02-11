@@ -226,3 +226,11 @@
   animation-name: fall, sway;
   animation-timing-function: linear, ease-in-out;
 }
+.third-page{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
