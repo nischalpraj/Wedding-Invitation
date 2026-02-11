@@ -37,7 +37,7 @@
   font-family: "Allura", cursive;
   font-weight: 600;
   font-size: 32px;
-  padding:0px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
   text-align: center;
   margin-top: 100px;
   color: #bf932a;
@@ -104,7 +104,7 @@
   color: #f88a87;
 }
 .second-page {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,11 +226,20 @@
   animation-name: fall, sway;
   animation-timing-function: linear, ease-in-out;
 }
-.third-page{
-  width:100%;
+.third-page {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 744px;
+  border: 1px solid red;
+  background-color: #fcfaf6;
+}
+
+.venue {
+  text-align: center;
+  font-family: "Playwrite NZ Basic", cursive;
+  font-size: 39px;
+  color: hsl(var(--sage-dark));
 }
