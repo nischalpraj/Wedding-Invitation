@@ -241,5 +241,7 @@
   text-align: center;
   font-family: "Playwrite NZ Basic", cursive;
   font-size: 39px;
-  color: hsl(var(--sage-dark));
+  line-height: 40px;
+  color: #3B4634;
+  font-weight: 600;
 }
