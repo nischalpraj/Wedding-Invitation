@@ -233,15 +233,22 @@
   align-items: center;
   flex-direction: column;
   height: 744px;
-  border: 1px solid red;
   background-color: #fcfaf6;
 }
-
+.map {
+  border: 1px solid black;
+  width: 400px;
+  height: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .venue {
   text-align: center;
   font-family: "Playwrite NZ Basic", cursive;
   font-size: 39px;
   line-height: 40px;
-  color: #3B4634;
+  color: #3b4634;
   font-weight: 600;
 }
