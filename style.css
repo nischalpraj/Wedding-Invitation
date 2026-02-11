@@ -245,31 +245,20 @@
   align-items: center;
   flex-direction: column;
 }
-.card {
-  width: 200px;
-  height: 150px;
-  background: #e5e5e5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:-200px;
-}
-
 .circle {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   background: #c9d1c4; 
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -150px;
 }
-
-.circle i {
-  font-size: 30px;
-  color: #3B4634; 
+.circle i{
+   color: #3b4634;
+   font-size: 24px;
 }
-
 .venue {
   text-align: center;
   font-family: "Playwrite NZ Basic", cursive;
@@ -277,5 +266,5 @@
   line-height: 40px;
   color: #3b4634;
   font-weight: 600;
-  margin-top: -180px;
+  /* margin-top: -180px; */
 }
