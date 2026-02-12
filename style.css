@@ -253,7 +253,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -150px;
+  margin-top: -10px;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -307,4 +307,15 @@
 .map-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.location-btn{
+  margin-top:40px;
+  background-color: #c9d1c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  width:150px;
+  height:30px;
+  border-radius: 10px;
 }
