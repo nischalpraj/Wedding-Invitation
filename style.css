@@ -237,7 +237,6 @@
   background-color: #fcfaf6;
 }
 .map {
-  border: 1px solid black;
   width: 400px;
   height: 780px;
   display: flex;
