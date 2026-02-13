@@ -310,7 +310,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 .location-btn {
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: #c9d1c4;
   display: flex;
   justify-content: center;
@@ -327,5 +327,5 @@
   color:#3b4634;
   font-family: "Playwrite NZ Basic", cursive;
   text-decoration: none;
-  
+
 }
