@@ -50,7 +50,7 @@
   font-style: normal;
   font-size: 100px;
   color: #f88a87;
-  margin: 100px 0px -10px 0px;
+  margin: 50px 0px -10px 0px;
   animation: fadein 5s ease-in-out forwards;
 }
 .and {
@@ -75,7 +75,7 @@
 .long-text {
   text-align: center;
   font-family: "Allura", cursive;
-  margin: 80px 0;
+  margin: 50px 0;
   color: #bf932a;
   font-size: 26px;
   font-weight: 600;
