@@ -323,3 +323,9 @@
 .location-btn i {
   color: #3b4634;
 }
+.location-btn a{
+  color:#3b4634;
+  font-family: "Playwrite NZ Basic", cursive;
+  text-decoration: none;
+  
+}
