@@ -319,14 +319,17 @@
   width: 150px;
   height: 30px;
   border-radius: 10px;
-   animation: shake 3s infinite;
-
+  animation:
+    appear 1s ease forwards,
+    shake 3s infinite 2s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
 }
 .location-btn i {
   color: #3b4634;
 }
-.location-btn a{
-  color:#3b4634;
+.location-btn a {
+  color: #3b4634;
   font-family: "Playwrite NZ Basic", cursive;
   text-decoration: none;
 }
