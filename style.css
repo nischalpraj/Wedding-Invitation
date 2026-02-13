@@ -273,16 +273,15 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-
 }
 .location {
   text-align: center;
   font-family: "Playwrite NZ Basic", cursive;
-  font-size:24px;
+  font-size: 24px;
   line-height: 30px;
-  color:#3b4634;
+  color: #3b4634;
   font-weight: 500;
-  margin-top:20px;
+  margin-top: 20px;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -298,10 +297,10 @@
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-.map iframe{
-  margin-top:20px;
+.map iframe {
+  margin-top: 20px;
   border-radius: 20px;
-   width: 100%;
+  width: 100%;
   height: 350px;
   border: none;
   display: block;
@@ -310,14 +309,14 @@
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
-.location-btn{
-  margin-top:40px;
+.location-btn {
+  margin-top: 40px;
   background-color: #c9d1c4;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:5px;
-  width:150px;
-  height:30px;
+  gap: 5px;
+  width: 150px;
+  height: 30px;
   border-radius: 10px;
 }
