@@ -38,10 +38,4 @@
     50% { margin-left: 40px; }
     100% { margin-left: 0; }
   }
-  @keyframes shake {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(-4px); }
-  50% { transform: translateY(4px); }
-  75% { transform: translateY(-4px); }
-  100% { transform: translateY(0); }
-}
+  
