@@ -41,7 +41,7 @@
   text-align: center;
   margin-top: 100px;
   color: #bf932a;
-  animation: fadein 1s ease-in-out forwards;
+  animation: fadein 3s ease-in-out forwards;
 }
 .saru {
   text-align: center;
@@ -51,7 +51,7 @@
   font-size: 100px;
   color: #f88a87;
   margin: 100px 0px -10px 0px;
-  animation: fadein 3s ease-in-out forwards;
+  animation: fadein 5s ease-in-out forwards;
 }
 .and {
   text-align: center;
@@ -60,7 +60,7 @@
   font-style: normal;
   font-size: 75px;
   color: #f88a87;
-  animation: fadein 3s ease-in-out forwards;
+  animation: fadein 5s ease-in-out forwards;
 }
 .bicek {
   text-align: center;
@@ -70,7 +70,7 @@
   font-size: 100px;
   color: #f88a87;
   margin: -10px 0 0 0;
-  animation: fadein 3s ease-in-out forwards;
+  animation: fadein 5s ease-in-out forwards;
 }
 .long-text {
   text-align: center;
@@ -80,7 +80,7 @@
   font-size: 26px;
   font-weight: 600;
   padding: 0 20px 0 20px;
-  animation: fadein 1s ease-in-out forwards;
+  animation: fadein 3s ease-in-out forwards;
 }
 .scroll-indicator {
   font-size: 2rem;
