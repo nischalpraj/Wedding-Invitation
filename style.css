@@ -14,7 +14,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   flex-direction: column;
 }
 .first-page {
@@ -35,7 +35,7 @@
   font-family: "Allura", cursive;
   font-weight: 600;
   font-size: 32px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 4px 0px 4px;
   text-align: center;
   margin-top: 100px;
   color: #bf932a;
@@ -323,14 +323,12 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 10%;
-
-
 }
 .location-btn i {
   color: #3b4634;
 }
-.location-btn a{
-  color:#3b4634;
+.location-btn a {
+  color: #3b4634;
   font-family: "Playwrite NZ Basic", cursive;
   text-decoration: none;
 }
