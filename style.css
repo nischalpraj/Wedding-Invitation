@@ -29,13 +29,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 0xp;
+  gap: 0px;
 }
 .inv-text {
   font-family: "Allura", cursive;
   font-weight: 600;
   font-size: 32px;
-  padding: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
   text-align: center;
   margin-top: 100px;
   color: #bf932a;
