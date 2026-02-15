@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 .container {
-  width: 450px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -35,7 +35,7 @@
   font-family: "Allura", cursive;
   font-weight: 600;
   font-size: 32px;
-  margin: 0px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
   text-align: center;
   margin-top: 100px;
   color: #bf932a;
