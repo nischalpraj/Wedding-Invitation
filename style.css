@@ -67,7 +67,7 @@
   font-style: normal;
   font-size: 100px;
   color: #f88a87;
-  margin: -10px 0 0 0;
+  margin: 10px 0 0 -50px;
   animation: fadein 5s ease-in-out forwards;
 }
 .long-text {
