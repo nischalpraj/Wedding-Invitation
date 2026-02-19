@@ -304,6 +304,7 @@
   height: 350px;
   border: none;
   display: block;
+  transition: all 0.4s ease;
 }
 .map iframe:hover {
   transform: translateY(-10px);
