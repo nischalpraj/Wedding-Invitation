@@ -38,7 +38,7 @@
   padding: 0px 4px 0px 4px;
   text-align: center;
   margin-top: 100px;
-  color: #6b3320;
+  color: #800020;
   animation: fadein 3s ease-in-out forwards;
 }
 .saru {
@@ -47,7 +47,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: #6b3320;
+  color: #800020;
   margin: 50px 0px -10px 0px;
   animation: fadein 5s ease-in-out forwards;
 }
@@ -57,7 +57,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: 75px;
-  color: #6b3320;
+  color: #800020;
   animation: fadein 5s ease-in-out forwards;
 }
 .bicek {
@@ -66,7 +66,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: #6b3320;
+  color: #800020;
   margin: 10px 0 0 -50px;
   animation: fadein 5s ease-in-out forwards;
 }
@@ -74,7 +74,7 @@
   text-align: center;
   font-family: "Allura", cursive;
   margin: 50px 0;
-  color: #6b3320;
+  color: #800020;
   font-size: 26px;
   font-weight: 600;
   padding: 0 20px 0 20px;
