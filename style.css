@@ -40,7 +40,7 @@
   padding: 0px 4px 0px 4px;
   text-align: center;
   margin-top: 100px;
-  color: #800020;
+  color: #d32f2f;
   animation: fadein 3s ease-in-out forwards;
 }
 .saru {
@@ -49,7 +49,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: #800020;
+  color: #d32f2f;
   margin: 50px 0px -10px 0px;
   animation: fadein 5s ease-in-out forwards;
 }
@@ -59,7 +59,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: 75px;
-  color: #800020;
+  color: #d32f2f;
   animation: fadein 5s ease-in-out forwards;
 }
 .bicek {
@@ -68,7 +68,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: #800020;
+  color: #d32f2f;
   margin: 10px 0 0 -50px;
   animation: fadein 5s ease-in-out forwards;
 }
@@ -76,7 +76,7 @@
   text-align: center;
   font-family: "Allura", cursive;
   margin: 50px 0;
-  color: #800020;
+  color: #d32f2f;
   font-size: 26px;
   font-weight: 600;
   padding: 0 20px 0 20px;
@@ -84,7 +84,7 @@
 }
 .scroll-indicator {
   font-size: 2rem;
-  border: 2px solid #f88a87;
+  border: 2px solid #d32f2f;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -101,7 +101,7 @@
 .arrow {
   font-size: 16px;
   font-weight: 300;
-  color: #f88a87;
+  color: #d32f2f;
 }
 .second-page {
   width: 100%;
