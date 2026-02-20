@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fcfaf6;
+
 }
 .container {
   width: 100vw;
@@ -107,7 +109,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fcfaf6;
 }
 .scratch-container {
   margin: 200px 0px;
@@ -232,7 +233,6 @@
   flex-direction: column;
   gap: 20px;
   height: 744px;
-  background-color: #fcfaf6;
 }
 .map {
   width: 400px;
