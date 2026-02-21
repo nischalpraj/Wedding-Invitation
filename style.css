@@ -10,7 +10,6 @@
   align-items: center;
   flex-direction: column;
   background-color: #fcfaf6;
-
 }
 .container {
   width: 100vw;
@@ -25,8 +24,7 @@
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background: url(./bg.png);
-  background-size: cover;      /* Image pura screen cover garxa */
+  background-size: cover; /* Image pura screen cover garxa */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -113,6 +111,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: url(./bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .scratch-container {
   margin: 200px 0px;
@@ -237,6 +239,9 @@
   flex-direction: column;
   gap: 20px;
   height: 744px;
+  background: url(./bg2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .map {
   width: 400px;
