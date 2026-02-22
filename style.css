@@ -23,11 +23,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  flex-direction: column;
-  background-size: cover; /* Image pura screen cover garxa */
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  flex-direction: column;}
 .text {
   display: flex;
   align-items: center;
@@ -111,10 +107,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(./bg2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .scratch-container {
   margin: 200px 0px;
