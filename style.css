@@ -231,9 +231,6 @@
   flex-direction: column;
   gap: 20px;
   height: 744px;
-  background: url(./bg2.jpg);
-  background-size: cover;
-  background-position: center;
 }
 .map {
   width: 400px;
