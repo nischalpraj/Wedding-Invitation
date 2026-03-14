@@ -24,7 +24,8 @@
   align-items: center;
   height: 100vh;
   flex-direction: column;
-position:relative}
+  position: relative;
+}
 .text {
   display: flex;
   align-items: center;
@@ -32,12 +33,19 @@ position:relative}
   flex-direction: column;
   gap: 0px;
 }
-.flower{
-position:absolute;
-width: 180px;
-height: 180px;
-top:0;
-right:0;
+.flower {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 0;
+  right: 0;
+}
+.flower-2 {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  bottom: -105px;
+  left: -30px;
 }
 .inv-text {
   font-family: "Allura", cursive;
@@ -110,12 +118,13 @@ right:0;
   color: #680e0e;
 }
 .second-page {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
+
 .scratch-container {
   margin: 200px 0px;
   display: flex;
