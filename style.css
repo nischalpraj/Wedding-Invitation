@@ -23,13 +23,21 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  flex-direction: column;}
+  flex-direction: column;
+position:relative}
 .text {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 0px;
+}
+.flower{
+position:absolute;
+width: 180px;
+height: 180px;
+top:0;
+right:0;
 }
 .inv-text {
   font-family: "Allura", cursive;
@@ -38,7 +46,7 @@
   padding: 0px 4px 0px 4px;
   text-align: center;
   margin-top: 100px;
-  color: #d32f2f;
+  color: #680e0e;
   animation: fadein 3s ease-in-out forwards;
 }
 .saru {
@@ -47,7 +55,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: #d32f2f;
+  color: #680e0e;
   margin: 50px 0px -10px 0px;
   animation: fadein 5s ease-in-out forwards;
 }
@@ -57,7 +65,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: 75px;
-  color: #d32f2f;
+  color: #680e0e;
   animation: fadein 5s ease-in-out forwards;
 }
 .bicek {
@@ -66,7 +74,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: #d32f2f;
+  color: #680e0e;
   margin: 10px 0 0 -50px;
   animation: fadein 5s ease-in-out forwards;
 }
@@ -74,7 +82,7 @@
   text-align: center;
   font-family: "Allura", cursive;
   margin: 50px 0;
-  color: #d32f2f;
+  color: #680e0e;
   font-size: 26px;
   font-weight: 600;
   padding: 0 20px 0 20px;
@@ -82,7 +90,7 @@
 }
 .scroll-indicator {
   font-size: 2rem;
-  border: 2px solid #d32f2f;
+  border: 2px solid #680e0e;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -99,7 +107,7 @@
 .arrow {
   font-size: 16px;
   font-weight: 300;
-  color: #d32f2f;
+  color: #680e0e;
 }
 .second-page {
   width: 100%;
