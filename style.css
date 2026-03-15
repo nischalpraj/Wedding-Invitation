@@ -19,6 +19,7 @@
   flex-direction: column;
 }
 .first-page {
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,16 +38,16 @@
   position: absolute;
   width: 380px;
   height: 380px;
-  top: -105px;
-  right: -30px;
+  top: 0px;
+  right: 0px;
   transform: rotate(180deg);
 }
 .flower-2 {
   position: absolute;
   width: 380px;
   height: 380px;
-  bottom: -105px;
-  left: -30px;
+  bottom: 0px;
+  left: 0px;
 }
 .inv-text {
   font-family: "Allura", cursive;
@@ -119,6 +120,7 @@
   color: #680e0e;
 }
 .second-page {
+  width:100vw;
   display: flex;
   justify-content: center;
   align-items: center;
