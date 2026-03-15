@@ -35,10 +35,11 @@
 }
 .flower {
   position: absolute;
-  width: 180px;
-  height: 180px;
-  top: 0;
-  right: 0;
+  width: 380px;
+  height: 380px;
+  top: -105px;
+  right: -30px;
+  transform: rotate(180deg);
 }
 .flower-2 {
   position: absolute;
