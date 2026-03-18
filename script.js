@@ -1,6 +1,7 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // Initialize all scratch canvases (there are 3 in the HTML)
 const canvases = document.querySelectorAll(".scratch-content canvas");
-const wedtext=document.querySelector(".wedtext");
+const wedtext = document.querySelector(".wedtext");
 
 const scratchedCanvases = new Set();
 
@@ -27,7 +28,7 @@ function allScratchCompleted() {
     origin: { x: 1, y: 0.6 },
   });
   wedtext.style.opacity = 1;
-  wedtext.style.animation="appear 1s ease forwards";
+  wedtext.style.animation = "appear 1s ease forwards";
 }
 
 canvases.forEach((canvas) => {
@@ -130,3 +131,13 @@ function checkScratchPercent(canvas, ctx) {
     }
   }
 }
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <SpeedInsights />
+    </>
+  );
+}
+
+export default MyApp;
